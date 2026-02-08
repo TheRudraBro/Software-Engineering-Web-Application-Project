@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>About Us</title>
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="bg-white shadow-md">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+    <!-- Logo -->
+    <div class="flex items-center gap-2">
+      <img 
+        src="Assets/TourismBangladesh.png" 
+        alt="Tourism Bangladesh"
+        class="h-10 w-auto object-contain"
+      >
+      <span class="text-xl font-bold text-green-600">
+        Tourism Bangladesh
+      </span>
+    </div>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex space-x-8 font-medium text-gray-700">
+      <li><a href="Home.html" class="hover:text-green-600 transition">Home</a></li>
+      <li><a href="AboutUs.html" class="hover:text-green-600 transition">About Us</a></li>
+      <li><a href="Tourism.html" class="hover:text-green-600 transition">Tourism</a></li>
+      <li><a href="Hotel.html" class="hover:text-green-600 transition">FAQ</a></li>
+      <li><a href="Transport.html" class="hover:text-green-600 transition">Blog</a></li>
+      <li>
+        <a href="Login.html" class="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition">
+          Log Out
+        </a>
+      </li>
+    </ul>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+    <ul class="space-y-4 font-medium text-gray-700">
+      <li><a href="Home.html" class="block hover:text-green-600">Home</a></li>
+      <li><a href="AboutUs.html" class="block hover:text-green-600">About Us</a></li>
+      <li><a href="Tourism.html" class="block hover:text-green-600">Tourism</a></li>
+      <li><a href="Hotel.html" class="block hover:text-green-600">FAQ</a></li>
+      <li><a href="Transport.html" class="block hover:text-green-600">Blog</a></li>
+      <li>
+        <a href="Login.html" class="block text-center bg-green-600 text-white py-2 rounded-lg hover:bg-green-700">
+          Log Out
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<script src="HomePage/navbar.js"></script>
+</body>
+</html>
