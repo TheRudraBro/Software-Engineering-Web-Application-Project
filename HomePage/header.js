@@ -1,11 +1,11 @@
 
   const images = [
     "Images/bandarban.png",
-    "Images/kuakata.png",
-    "Images/rangamati.png",
+      "Images/sajek.png",
+      "Images/rangamati.png",
     "Images/saintmartin.png",
-    "Images/sajek.png",
     "Images/sunamganj.png",
+    "Images/kuakata.png",
     "Images/sundarban.png",
     "Images/sylhet.png"
   ];
@@ -20,4 +20,4 @@
 
  
  changeBackground();
-  setInterval(changeBackground, 4000);
+  setInterval(changeBackground, 3000);
