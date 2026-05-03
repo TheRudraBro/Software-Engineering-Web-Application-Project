@@ -334,26 +334,37 @@
 
   </div>
 </footer>
-<script>
-/* ✅ LOGIN GUARD (IMPORTANT) */
-if (sessionStorage.getItem("auth") !== "true") {
-  window.location.replace("index.html");
-}
+  <!-- ================= JAVASCRIPT ================= -->
+  <script>
 
-/* ✅ LOGOUT */
-function logoutUser() {
-  sessionStorage.removeItem("auth");
-  window.location.replace("index.html");
-}
+    /* LOGIN GUARD */
+    if (sessionStorage.getItem("auth") !== "true") {
+      window.location.replace("index.html");
+    }
 
-/* mobile menu (optional) */
-document.getElementById("menu-btn")?.addEventListener("click", () => {
-  document.getElementById("mobile-menu")?.classList.toggle("hidden");
-});
-</script>
+    /* LOGOUT */
+    function logoutUser() {
+      sessionStorage.removeItem("auth");
+      window.location.replace("index.html");
+    }
+
+    /* MOBILE NAVBAR TOGGLE */
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", function () {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+    });
+
+  </script>
+
 
 <script src="HomePage/header.js"></script>
-<script src="HomePage/navbar.js"></script>
+<!-- <script src="HomePage/navbar.js"></script> -->
 <!-- <script src="LoginPage/logout.js"></script> -->
 </body>
 </html>
